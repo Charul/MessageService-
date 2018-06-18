@@ -1,0 +1,33 @@
+<form method="post" action="/submitMessage">
+    <ul class="form-style-1">
+        <li class="j-table-header">
+            <h2>Create A New Message</h2>
+        </li>
+
+        <li><label>From<span class="required">*</span></label><input type="text"
+                                                                     name="fromId"
+                                                                     id="fromId"
+                                                                     class="field-divided"
+                                                                     placeholder="Enter the Sender's User Id"/>&nbsp;
+        <li>
+            <label>To<span class="required">*</span></label>
+            <input type="text" name="toId" id="toId" class="field-divided" maxlength="120" placeholder="Enter the receiver's User Id" />
+        </li>
+
+        <li>
+            <label>Subject <span class="required">*</span></label>
+            <input type="text" name="subject"  class="field-divided" maxlength="120" placeholder="Enter the message subject" />
+        </li>
+
+        <li>
+            <label>Description <span class="required">*</span></label>
+            <input type="text" name="body"  placeholder="Enter the message content" />
+        </li>
+
+        <li>
+            <!--<button class="c-button">Submit</button>-->
+            <input type="submit" value="Submit">
+        </li>
+    </ul>
+</form>
+

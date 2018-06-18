@@ -1,0 +1,35 @@
+{{!
+/**
+ *  Partials / User Editor
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *  Editor used inside any page
+ *
+ */
+}}
+
+<textarea data-plugins="{{ plugins }}"
+          {{#if activateOnClick }}data-activate-on-click{{/if}}
+          placeholder="{{ placeholder }}"
+          name="{{ name }}"
+          class="{{ className }}"
+          {{#if folderId}}data-folder-id="{{ folderId }}"{{/if}}
+    {{#if elementName}}data-component-element="{{ elementName }}"{{/if}}
+    {{#if noGlobal}}{{else}}id="editor"{{/if}}>{{ value }}</textarea>
+
+<style>
+    #article, .mce-tinymce, .mce-stack-layout, .mce-edit-area {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .mce-tinymce iframe {
+        flex: 1;
+    }
+
+
+</style>
+
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
